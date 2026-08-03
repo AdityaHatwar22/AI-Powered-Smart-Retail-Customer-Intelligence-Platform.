@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  smart-retail-api:
+    build: .
+    image: smart-retail-ai:latest
+    container_name: smart-retail-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - retail-data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  retail-data:
