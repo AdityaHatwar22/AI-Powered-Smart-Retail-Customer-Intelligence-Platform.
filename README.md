@@ -1,6 +1,6 @@
 # AI-Powered Smart Retail & Customer Intelligence Platform
 
-**Author:** Devansh Singh, B.Tech Computer Science, VIT Bhopal University
+**Author:** Aditya Hatwar 23BAI10902, B.Tech Computer Science, VIT Bhopal University
 
 A unified, production-style AI platform for retail that consolidates three
 AI subsystems — **computer vision**, **NLP**, and a **conversational
